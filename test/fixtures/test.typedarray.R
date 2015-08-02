@@ -1,9 +1,10 @@
 options( digits = 16 )
 library( jsonlite )
+library( triangle )
 
-a = 0
-b = 1
-c = 0.5
+a = -999
+b = 999
+c = 333.97
 x = seq( -1000, 1000, 0.5 )
 y = ptriangle( x, a, b, c )
 

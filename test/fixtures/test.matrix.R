@@ -1,9 +1,10 @@
 options( digits = 16 )
 library( jsonlite )
+library( triangle )
 
 a = 0
-b = 1
-c = 0.5
+b = 20
+c = 10
 x = 0:24
 y = ptriangle( x, a, b, c )
 
