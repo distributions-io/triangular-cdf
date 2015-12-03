@@ -20,11 +20,13 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/compute-io/triangular-cdf.git"
+    "url": "git://github.com/distributions-io/triangular-cdf.git"
   },
   "keywords": [
     "distributions.io",
     "distributions",
+    "distribution",
+    "continuous",
     "probability",
     "statistics",
     "stats",
@@ -33,7 +35,7 @@
     "distribution function"
   ],
   "bugs": {
-    "url": "https://github.com/compute-io/triangular-cdf/issues"
+    "url": "https://github.com/distributions-io/triangular-cdf/issues"
   },
   "dependencies": {
     "compute-array-constructors": "^1.0.0",

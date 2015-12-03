@@ -163,8 +163,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 
 		actual = cdf( data, {
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 		assert.notEqual( actual, data );
 
@@ -177,8 +177,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		actual = cdf( data, {
 			'copy': false,
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 		assert.strictEqual( actual, data );
 
@@ -219,8 +219,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		actual = cdf( data, {
 			'copy': false,
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 		expected = new Float32Array( validationData.expected.map( function( d ) {
 			return d === 'Inf' ? Infinity : d;
@@ -250,8 +250,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		actual = cdf( data, {
 			'dtype': 'float32',
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 
 		assert.notEqual( actual, data );
@@ -282,8 +282,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		actual = cdf( data, {
 			'accessor': getValue,
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 		assert.notEqual( actual, data );
 
@@ -298,8 +298,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 			'accessor': getValue,
 			'copy': false,
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 		assert.strictEqual( actual, data );
 
@@ -328,8 +328,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		actual = cdf( data, {
 			'path': 'x.1',
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 
 		expected = validationData.expected
@@ -356,8 +356,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 			'path': 'x/1',
 			'sep': '/',
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 		assert.strictEqual( actual, data );
 
@@ -384,8 +384,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		mat = matrix( d1, [5,5], 'float64' );
 		out = cdf( mat, {
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 
 		for ( i = 0; i < out.length; i++ ) {
@@ -398,8 +398,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		out = cdf( mat, {
 			'copy': false,
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 		assert.strictEqual( mat, out );
 
@@ -425,8 +425,8 @@ describe( 'distributions-triangular-cdf', function tests() {
 		out = cdf( mat, {
 			'dtype': 'float32',
 			'a': validationData.a,
-		'b': validationData.b,
-		'c': validationData.c
+			'b': validationData.b,
+			'c': validationData.c
 		});
 
 		assert.strictEqual( out.dtype, 'float32' );
